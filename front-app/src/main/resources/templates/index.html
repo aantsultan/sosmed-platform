@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/main}"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <title th:text="#{post.title.page}"></title>
+</head>
+
+<body>
+  <section layout:fragment="content" class="main-content">
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+
+        <!--Group Card-->
+        <div th:replace="~{group-community/view :: group_community}"></div>
+
+        <!--Posting Card-->
+        <div th:replace="~{posts/view :: posts}"></div>
+
+        <!--Friendlist Card-->
+        <div th:replace="~{friend-list/view :: friend_list}"></div>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

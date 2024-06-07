@@ -1,0 +1,30 @@
+<div th:fragment="friend_list" class="col-md-3">
+    <div class="card z-index-0">
+        <div class="card-header">
+            <h6>
+                <i class="fa fa-user me-2 text-primary text-sm" aria-hidden="true"></i>
+                <span class="text-success" th:text="#{post.label.friend.list}"></span>
+            </h6>
+        </div>
+        <div class="card-body border-top">
+            <ul class="list-group text-sm">
+                <li class="list-group-item">
+                    <img th:src="@{/img/bruce-mars.jpg}" class="w-sm-15 rounded-circle shadow-sm"  th:alt="#{general.label.not.found}"/>
+                    <a href="#" class="form-label">Liliya</a>
+                </li>
+                <li class="list-group-item">
+                    <img th:src="@{/img/bruce-mars.jpg}" class="w-sm-15 rounded-circle shadow-sm"  th:alt="#{general.label.not.found}"/>
+                    <a href="#" class="form-label">Kiana Kaslana</a>
+                </li>
+                <li class="list-group-item">
+                    <img th:src="@{/img/bruce-mars.jpg}" class="w-sm-15 rounded-circle shadow-sm"  th:alt="#{general.label.not.found}"/>
+                    <a href="#" class="form-label">Kevin Kaslana</a>
+                </li>
+                <li class="list-group-item">
+                    <img th:src="@{/img/bruce-mars.jpg}" class="w-sm-15 rounded-circle shadow-sm"  th:alt="#{general.label.not.found}"/>
+                    <a href="#" class="form-label">Vini JR.</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
